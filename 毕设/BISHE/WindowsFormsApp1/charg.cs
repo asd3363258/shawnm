@@ -258,5 +258,11 @@ namespace WindowsFormsApp1
             SettingTime();
 
         }
+
+        private void Recharge_Click(object sender, EventArgs e)
+        {
+            Form RechargeFrom = new Form();
+            RechargeFrom.ShowDialog();
+        }
     }
 }

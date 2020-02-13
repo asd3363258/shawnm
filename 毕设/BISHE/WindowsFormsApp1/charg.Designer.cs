@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.LandButton = new System.Windows.Forms.Button();
             this.RegistrationButton = new System.Windows.Forms.Button();
             this.RefreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.Recharge = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -177,7 +178,7 @@
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // GridView
-            //           
+            // 
             this.GridView.AllowUserToAddRows = false;
             this.GridView.AllowUserToDeleteRows = false;
             this.GridView.AllowUserToResizeColumns = false;
@@ -193,8 +194,8 @@
             this.GridView.Name = "GridView";
             this.GridView.ReadOnly = true;
             this.GridView.RowHeadersVisible = false;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.GridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.GridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.GridView.RowTemplate.Height = 27;
             this.GridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridView.Size = new System.Drawing.Size(1037, 598);
@@ -244,7 +245,7 @@
             // 
             // RegistrationButton
             // 
-            this.RegistrationButton.Location = new System.Drawing.Point(571, 12);
+            this.RegistrationButton.Location = new System.Drawing.Point(484, 12);
             this.RegistrationButton.Name = "RegistrationButton";
             this.RegistrationButton.Size = new System.Drawing.Size(75, 57);
             this.RegistrationButton.TabIndex = 16;
@@ -257,11 +258,22 @@
             this.RefreshTimer.Interval = 60000;
             this.RefreshTimer.Tick += new System.EventHandler(this.RefreshTimer_Tick);
             // 
+            // Recharge
+            // 
+            this.Recharge.Location = new System.Drawing.Point(620, 12);
+            this.Recharge.Name = "Recharge";
+            this.Recharge.Size = new System.Drawing.Size(75, 57);
+            this.Recharge.TabIndex = 17;
+            this.Recharge.Text = "充值";
+            this.Recharge.UseVisualStyleBackColor = true;
+            this.Recharge.Click += new System.EventHandler(this.Recharge_Click);
+            // 
             // charg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 681);
+            this.Controls.Add(this.Recharge);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.LandButton);
             this.Controls.Add(this.GridView);
@@ -312,5 +324,6 @@
         private System.Windows.Forms.ToolStripMenuItem 查看ToolStripMenuItem;
         private System.Windows.Forms.Button RegistrationButton;
         private System.Windows.Forms.Timer RefreshTimer;
+        private System.Windows.Forms.Button Recharge;
     }
 }
